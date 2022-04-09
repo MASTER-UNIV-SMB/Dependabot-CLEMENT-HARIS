@@ -17,10 +17,10 @@ jobs:
       - uses: actions/setup-java@v2
         with:
           distribution: 'adopt' # See 'Supported distributions' for available options
-          java-version: '15'
+          java-version: '17'
 
       - name: Maven Build & Sonar analysis
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=univ-smb-m1-isc-2021_hello-world
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=univ-smb-m1-isc-2021_Dependabot-CLEMENT-HARIS
         #run: mvn -B verify --file pom.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
