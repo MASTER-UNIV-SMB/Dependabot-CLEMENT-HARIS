@@ -8,7 +8,7 @@ import org.json.JSONObject;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+@CrossOrigin(origins = "http://localhost:3000", allowedHeaders = "*")
 @RestController
 @RequestMapping("/api/v1/maven")
 public class MavenAPIController {

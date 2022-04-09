@@ -1,5 +1,7 @@
 package fr.harisclement.info803.utils;
 
+import java.util.regex.Pattern;
+
 public class VersionCompare implements Comparable<VersionCompare> {
 
     private String version;
@@ -7,7 +9,9 @@ public class VersionCompare implements Comparable<VersionCompare> {
     public VersionCompare(String version) {
         if (version == null)
             throw new IllegalArgumentException("La version ne peut être null");
-        if (!version.matches("[0-9]+(\\.[0-9]+)*"))
+
+        Pattern p = Pattern.compile("[0-9]+(\\.[0-9]+)*");
+        if (!version.matches(p.pattern()))
             throw new IllegalArgumentException("Le format de version est invalide");
         this.version = version;
     }

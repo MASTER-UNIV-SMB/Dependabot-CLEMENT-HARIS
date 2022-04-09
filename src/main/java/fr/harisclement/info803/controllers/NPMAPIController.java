@@ -8,7 +8,7 @@ import org.json.JSONObject;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+@CrossOrigin(origins = "http://localhost:3000", allowedHeaders = "*")
 @RestController
 @RequestMapping("/api/v1/npm")
 public class NPMAPIController {
@@ -37,8 +37,6 @@ public class NPMAPIController {
 
             return JSONReponse.apiReponse(false, "Ok", data);
         } catch (Exception e) {
-            e.printStackTrace();
-
             JSONObject data = new JSONObject();
             data.put("name", packageProvided.getName());
             data.put("version", packageProvided.getVersion());

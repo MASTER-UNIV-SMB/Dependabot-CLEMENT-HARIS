@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.Map;
 
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+@CrossOrigin(origins = "http://localhost:3000", allowedHeaders = "*")
 @RestController
 @RequestMapping("/api/v1/github")
 public class GitHubAPIController {
@@ -42,7 +42,6 @@ public class GitHubAPIController {
 
             return JSONReponse.apiReponse(false, "Ok", responseJSON);
         } catch (Exception e) {
-            e.printStackTrace();
             return JSONReponse.apiReponse(true, e.getMessage(), null);
         }
     }
@@ -60,7 +59,6 @@ public class GitHubAPIController {
 
             return JSONReponse.apiReponseJSON(false, "Ok", response);
         } catch (Exception e) {
-            e.printStackTrace();
             return JSONReponse.apiReponse(true, e.getMessage(), null);
         }
     }
@@ -88,7 +86,6 @@ public class GitHubAPIController {
 
             return JSONReponse.apiReponse(false, "Ok", jsonObject);
         } catch (Exception e) {
-            e.printStackTrace();
             return JSONReponse.apiReponse(true, e.getMessage(), null);
         }
     }
