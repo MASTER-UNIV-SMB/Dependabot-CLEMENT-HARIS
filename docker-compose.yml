@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  dependabot-backend:
+    depends_on:
+     - dependabot-mysql
+    build:
+      context: src
+      dockerfile: .
+    ports:
+      - "8080:8080"
+    restart: always
+    networks:
+      - dependabot-network
+  dependabot-ui:
+    build:
+      context: client
+      dockerfile: ui.dockerfile
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    volumes:
+      - ./client:/usr/src/app/dependabot_client
+      - /usr/src/app/dependabot_client/node_modules
+networks:
+  dependabot-network:
+    driver: bridge
+volumes:
+  dbdata:
+    driver: local
