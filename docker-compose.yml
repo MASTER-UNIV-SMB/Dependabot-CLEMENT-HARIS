@@ -4,8 +4,7 @@ services:
     depends_on:
      - dependabot-mysql
     build:
-      context: src
-      dockerfile: .
+      dockerfile: ./Dockerfile
     ports:
       - "8080:8080"
     restart: always
@@ -13,7 +12,7 @@ services:
       - dependabot-network
   dependabot-ui:
     build:
-      context: client
+      context: client/
       dockerfile: ui.dockerfile
     ports:
       - "3000:3000"
