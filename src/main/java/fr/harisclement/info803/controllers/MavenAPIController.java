@@ -46,7 +46,6 @@ public class MavenAPIController {
             data.put("isLoading", false);
             data.put("isError", false);
 
-            e.printStackTrace();
             return JSONReponse.apiReponse(true, e.getMessage(), null);
         }
     }
