@@ -1,5 +1,7 @@
 # Dependabot
 
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=MASTER-UNIV-SMB_INFO803_Dependabot_Coliche_DeLouvencourt&metric=bugs)](https://sonarcloud.io/summary/new_code?id=MASTER-UNIV-SMB_INFO803_Dependabot_Coliche_DeLouvencourt)  [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=MASTER-UNIV-SMB_INFO803_Dependabot_Coliche_DeLouvencourt&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=MASTER-UNIV-SMB_INFO803_Dependabot_Coliche_DeLouvencourt) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=MASTER-UNIV-SMB_INFO803_Dependabot_Coliche_DeLouvencourt&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=MASTER-UNIV-SMB_INFO803_Dependabot_Coliche_DeLouvencourt) [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=MASTER-UNIV-SMB_INFO803_Dependabot_Coliche_DeLouvencourt&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=MASTER-UNIV-SMB_INFO803_Dependabot_Coliche_DeLouvencourt) [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=MASTER-UNIV-SMB_INFO803_Dependabot_Coliche_DeLouvencourt&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=MASTER-UNIV-SMB_INFO803_Dependabot_Coliche_DeLouvencourt)
+
 ![img.png](ressources/screenshot.png)
 
 # Sujet
